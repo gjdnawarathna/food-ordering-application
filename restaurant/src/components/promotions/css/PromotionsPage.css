@@ -1,0 +1,131 @@
+/* PromotionsPage.css */
+
+.promotions-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Fixed to show only 3 cards per row */
+  grid-gap: 60px; /* Increased spacing between cards */
+  padding: 20px;
+  background-color: #004d00; /* Dark green background */
+  color: white; /* White text for contrast */
+}
+
+.promotions-title {
+  grid-column: 1 / -1; /* Span across all columns */
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #f5a623; /* Highlighted title color */
+}
+
+.promotion-card {
+  background-color: #003300; /* Slightly darker shade for cards */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Deeper shadow for emphasis */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.promotion-card:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Elevated shadow on hover */
+}
+
+.promotion-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 8px; /* Slight rounding for image corners */
+}
+
+.promotion-details h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #f5a623; /* Highlight color for the name */
+}
+
+.promotion-details p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #ccc; /* Softer color for details */
+}
+
+.no-promotions {
+  grid-column: 1 / -1; /* Center message across grid */
+  text-align: center;
+  font-size: 1.2rem;
+  color: #ccc; /* Subtle text color */
+}
+
+.additional-content {
+  background-color: #003300;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.subscribe-section {
+  margin-bottom: 20px;
+}
+
+.subscribe-section h2 {
+  font-size: 1.8rem;
+  color: #f5a623;
+}
+
+.subscribe-section p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.subscribe-form input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  width: 250px;
+}
+
+.subscribe-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  background-color: #f5a623;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.subscribe-form button:hover {
+  background-color: #d4881f;
+}
+
+.footer-section {
+  margin-top: 20px;
+}
+
+.footer-section p {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.social-icons a img {
+  width: 30px;
+  margin: 0 10px;
+  filter: brightness(0) invert(1); /* White icons */
+  transition: transform 0.2s;
+}
+
+.social-icons a img:hover {
+  transform: scale(1.1);
+}

@@ -1,0 +1,163 @@
+.home-page {
+  background-color: #004d00; 
+  color: white;
+  font-family: 'Gayathri', sans-serif;
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-x: hidden;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 100px;
+  height: calc(100vh - 100px); /* Adjust for footer height */
+}
+
+.text-content {
+  max-width: 40%;
+  text-align: center;
+}
+
+.text-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+  line-height: 1.2;
+  font-family: 'GrechenFuemen', sans-serif;
+}
+
+.text-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  font-family: 'GrechenFuemen', sans-serif;
+}
+
+.text-content .description {
+  font-size: 1.2rem;
+  margin: 20px 0;
+  line-height: 1.5;
+  font-family: 'Gayathri', sans-serif;
+}
+
+.cta-button {
+  background-color: #f5a623; 
+  color: white; 
+  padding: 10px 30px; 
+  border: none; 
+  border-radius: 5px; 
+  font-size: 1.2rem; 
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #d4881f;
+}
+
+.image-content {
+  display: flex;
+  gap: 20px;
+}
+
+.image-content .burger-image {
+  max-width: 40%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.additional-section {
+  background-color: #003300;
+  color: white;
+  padding: 40px 80px;
+  text-align: left;
+}
+
+.additional-section h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #f5a623;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.features-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+.features-list li {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.testimonials {
+  background-color: #002200;
+  padding: 40px 80px;
+  border-radius: 10px;
+}
+
+.testimonials h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #f5a623;
+}
+
+.testimonial {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.testimonial p:first-child {
+  font-style: italic;
+  color: #ddd;
+}
+
+.testimonial p:last-child {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.footer {
+  background-color: #003300;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.footer .contact-info {
+  margin-top: 10px;
+  color: #aaa;
+}
+
+@font-face {
+  font-family: 'GrechenFuemen';
+  src: url('../GrechenFuemen-Regular.ttf') format('truetype');
+}
+.small-burger-container {
+  position: absolute;
+  bottom: 500px;
+  left: 0;
+  animation: moveRight 5s infinite alternate ease-in-out;
+}
+
+.small-burger-image {
+  width: 100px;
+  height: auto;
+  transform: scale(1);
+}
+
+@keyframes moveRight {
+  from {
+    left: 0;
+  }
+  to {
+    left: calc(100% - 120px);
+  }
+}
