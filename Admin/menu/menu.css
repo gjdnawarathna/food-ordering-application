@@ -1,0 +1,100 @@
+.admin-dashboard-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .form-group select,
+.form-group input[type="file"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.success {
+  color: #ffffff; /* White text for contrast */
+  margin-top: 15px;
+  padding: 15px 20px; /* Add padding for better spacing */
+  background-color: #28a745; /* Bright green for success */
+  border-radius: 6px; /* Rounded corners */
+  font-size: 18px; /* Slightly larger font size */
+  font-weight: bold; /* Bold text for emphasis */
+  text-align: center; /* Center-align text */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  animation: fadeIn 1s ease-in-out; /* Smooth fade-in effect */
+}
+
+/* Animation for smooth fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+  .admin-dashboard {
+    width: 100%;
+  }
+  
+  .admin-content {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .admin-menu {
+
+  }
+  
+  .admin-form-container {
+    flex-basis: 80%;
+    padding: 20px;
+
+  }
+  
+  .admin-menu-form {
+   
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
